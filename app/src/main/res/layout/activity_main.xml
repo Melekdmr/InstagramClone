@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="136dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="36dp"
+        android:onClick="signUpClicked"
+        android:text="SIGN UP"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="291dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Enter password"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="291dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:hint="Enter e-Mail"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="136dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="36dp"
+        android:onClick="signInClicked"
+        android:text="SIGN IN"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/passwordText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
